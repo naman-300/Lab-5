@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+}
+h1 ,h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+p, a{
+    font-family: "Roboto", sans-serif ;
+    font-size: 1.3em;
+    text-decoration: none;
+    color:#0e0e0e;
+}
+/*Using flexbox now*/
+body > header{
+height: 125px;
+width: auto;
+padding: 15px 10px;
+display: flex;
+}
+body > header > div{
+    flex-grow: 1;
+}
+body > header > nav > menu{
+    display: flex;
+    list-style: none;
+}
+body > header > nav > menu > li{
+    padding: 0px 12px;
+}
+body > main > section:nth-child(1){
+    padding: 2%;
+    display: flex;
+    text-align: center;
+}
+
+body > main > section:nth-child(1) > h2{
+    font-size: 2em;
+}
+body > main > section:nth-child(2){
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(5 , 20%);
+    padding: 10px;
+}
